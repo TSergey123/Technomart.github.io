@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/catalogFlexStyle.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<div class="up-header">
+				<div class="container">
+					<div class="top-header">
+						<div class="home-button">
+							<a href="MainPage.html">Техномарт</a>
+						</div>
+						<div class="search">
+							<div class="search-form">
+								<form>
+									<input type="text" placeholder="Поиск:" />
+									<button type="submit"></button>
+								</form>
+							</div>
+						</div>
+						<div class="bookmark">
+							<div class="bookmarks" id="bookmarksBlock">
+								<a href="emptypage.html" id="bookmark_value">Закладки: 0</a>
+							</div>
+						</div>
+						<div class="basket">
+							<a href="emptypage.html" id="basket_value"> Корзина: 10</a>
+						</div>
+						<div class="checkout">
+							<a href="emptypage.html">Оформить заказ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="middle-header-bg">
+				<div class="container">
+					<div class="middle-header">
+						<p class="about-p">
+							Интернет-магазин строительных материалов<br />
+							и инструментов для ремонта
+						</p>
+						<div class="adress-phone-block">
+							<div class="header-phone">
+								<h2>+7 (812) 555-05-55</h2>
+							</div>
+							<p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+						</div>
+						<div class="reg-but">
+							<div class="registered">
+								<a class="profile" href="profile-page.html">Равшан Джамшутович</a>
+								<a class="deauthorization" href="deauthorization.html"></a>
+							</div>
+							<nav class="reg-user-nav">
+								<ul>
+									<li><a href="emptypage.html">Мои заказы</a></li>
+									<li><a href="profile-page.html">Личный кабинет</a></li>
+								</ul>
+							</nav>
+						</div>
+						<nav class="header-navbar">
+							<ul>
+								<li><a href="MainPage.html">Главная</a></li>
+								<li><a href="emptypage.html">Компания</a></li>
+								<li><a href="catalog.html">Каталог</a></li>
+								<li><a href="emptypage.html">Новости</a></li>
+								<li><a href="emptypage.html">Спецпредложения</a></li>
+								<li><a href="emptypage.html">Доставка</a></li>
+								<li><a href="emptypage.html">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="container">
+				<nav class="catalog-navbar">
+					<ul class="catalog-list">
+						<li>
+							<a href="emptypage.html">
+								<img src="img/TechnomartIcons/icons/icon-home.svg" alt="" />
+							</a>
+						</li>
+						<li><a href="emptypage.html">Каталог</a></li>
+						<li><a href="emptypage.html">Инструмент</a></li>
+						<li><a href="emptypage.html">Перфораторы</a></li>
+					</ul>
+				</nav>
+
+				<div class="catalog-block-title">
+					<h2>Перфораторы</h2>
+				</div>
+				<div class="flex-container">
+					<div class="filter-block">
+						<div class="filter-block-title">
+							<h3>Фильтр:</h3>
+						</div>
+						<h3>Цена:</h3>
+						<form action="https://echo.htmlacademy.ru/" method="post">
+							<div class="price-slider" data-lbound="10" data-unbound="50">
+								<div class="range-line">
+									<div class="left circle"></div>
+									<div class="right circle"></div>
+									<div class="second-range-line"></div>
+								</div>
+								<!-- <input
+									type="range"
+									min="0"
+									max="1500"
+									step="1"
+									value="0"
+									id="min_range"
+									oninput="minRangeOut(this.value)"
+								/>
+								<input
+									type="range"
+									min="1501"
+									max="3000"
+									step="1"
+									value="3000"
+									id="max_range"
+									oninput="maxRangeOut(this.value)"
+								/> -->
+							</div>
+							<div class="total-price">
+								<div class="min-price">
+									<input type="text" id="min_price_input" value="0" />
+								</div>
+								<span class="line"> - </span>
+								<div class="max-price">
+									<input type="text" id="max_price_input" value="30000" />
+								</div>
+							</div>
+							<div class="filter-manufacturer">
+								<h3>Производители:</h3>
+								<div class="checkbox-sort">
+									<input type="checkbox" name="bosch_check" id="bosch_check" checked />
+									<label for="bosch_check">Bosch</label><br />
+								</div>
+
+								<div class="checkbox-sort">
+									<input type="checkbox" name="interskol_check" id="interskol_check" />
+									<label for="interskol_check">Интерскол</label> <br />
+								</div>
+
+								<div class="checkbox-sort">
+									<input type="checkbox" name="makita_check" id="makita_check" checked />
+									<label for="makita_check">Makita</label> <br />
+								</div>
+
+								<div class="checkbox-sort">
+									<input type="checkbox" name="dewalt_check" id="dewalt_check" />
+									<label for="dewalt_check">Dewalt</label> <br />
+								</div>
+
+								<div class="checkbox-sort">
+									<input type="checkbox" name="hitachi_check" id="hitachi_check" />
+									<label for="hitachi_check">Hitachi</label> <br />
+								</div>
+							</div>
+							<div class="power">
+								<h3>Питание:</h3>
+								<div class="radio-sort">
+									<input type="radio" name="radio-sort" id="battery" checked />
+									<label for="battery">Аккумуляторные</label>
+								</div>
+								<div class="radio-sort">
+									<input type="radio" name="radio-sort" id="socket" />
+									<label for="socket">Сетевые</label>
+								</div>
+								<input type="submit" value="Показать" />
+							</div>
+						</form>
+					</div>
+					<div class="catalog-sort">
+						<div class="catalog-sort-title">
+							<h3>Сортировка:</h3>
+							<nav>
+								<ul>
+									<li><a href="emptypage.html">По цене</a></li>
+									<li><a href="emptypage.html">По типу</a></li>
+									<li><a href="emptypage.html">По функциональности</a></li>
+									<li class="arrow-up"><a href="emptypage.html"></a></li>
+									<li class="arrow-down"><a href="emptypage.html"></a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="catalog-assortment">
+							<div class="good">
+								<div class="good-img">
+									<form class="hover-good">
+										<div class="hover-buy">
+											<input type="button" value="купить" class="basket_add" />
+										</div>
+										<div class="hover-bookmarks">
+											<input type="button" value="В закладки" class="bookmark_add" />
+										</div>
+									</form>
+									<img src="img/TechnomartIcons/goods/drill_second.png" alt="" />
+								</div>
+								<h2>Перфаратор BOSH BFG 6000</h2>
+								<div class="previus-price">30500 Р.</div>
+								<div class="actual-price">25500 Р.</div>
+								<div class="triangle"></div>
+							</div>
+							<div class="good">
+								<div class="good-img">
+									<form class="hover-good">
+										<div class="hover-buy">
+											<input type="button" value="купить" class="basket_add" />
+										</div>
+										<div class="hover-bookmarks">
+											<input type="button" value="В закладки" class="bookmark_add" />
+										</div>
+									</form>
+									<img src="img/TechnomartIcons/goods/drill_second.png" alt="" />
+								</div>
+								<h2>Перфаратор BOSH BFG 6000</h2>
+								<div class="previus-price">30500 Р.</div>
+								<div class="actual-price">25500 Р.</div>
+								<div class="triangle"></div>
+							</div>
+							<div class="good">
+								<div class="out-ticket">
+									<div class="ticket">new</div>
+								</div>
+								<div class="good-img">
+									<form class="hover-good">
+										<div class="hover-buy">
+											<input type="button" value="купить" class="basket_add" />
+										</div>
+										<div class="hover-bookmarks">
+											<input type="button" value="В закладки" class="bookmark_add" />
+										</div>
+									</form>
+									<img src="img/TechnomartIcons/goods/drill_second.png" alt="" />
+								</div>
+								<h2>Перфаратор BOSH BFG 6000</h2>
+								<div class="previus-price">30500 Р.</div>
+								<div class="actual-price">25500 Р.</div>
+								<div class="triangle"></div>
+							</div>
+							<div class="good">
+								<div class="out-ticket">
+									<div class="ticket">new</div>
+								</div>
+								<div class="good-img">
+									<form class="hover-good">
+										<div class="hover-buy">
+											<input type="button" value="купить" class="basket_add" />
+										</div>
+										<div class="hover-bookmarks">
+											<input type="button" value="В закладки" class="bookmark_add" />
+										</div>
+									</form>
+									<img src="img/TechnomartIcons/goods/drill_second.png" alt="" />
+								</div>
+								<h2>Перфаратор BOSH BFG 3000</h2>
+								<div class="previus-price">22500 Р.</div>
+								<div class="actual-price">15500 Р.</div>
+								<div class="triangle"></div>
+							</div>
+							<div class="good">
+								<div class="good-img">
+									<form class="hover-good">
+										<div class="hover-buy">
+											<input type="button" value="купить" class="basket_add" />
+										</div>
+										<div class="hover-bookmarks">
+											<input type="button" value="В закладки" class="bookmark_add" />
+										</div>
+									</form>
+									<img src="img/TechnomartIcons/goods/drill_second.png" alt="" />
+								</div>
+								<h2>Перфаратор BOSH BFG 6000</h2>
+								<div class="previus-price">30500 Р.</div>
+								<div class="actual-price">25500 Р.</div>
+								<div class="triangle"></div>
+							</div>
+							<div class="good">
+								<div class="out-ticket">
+									<div class="ticket">new</div>
+								</div>
+								<div class="good-img">
+									<form class="hover-good">
+										<div class="hover-buy">
+											<input type="button" value="купить" class="basket_add" />
+										</div>
+										<div class="hover-bookmarks">
+											<input type="button" value="В закладки" class="bookmark_add" />
+										</div>
+									</form>
+									<img src="img/TechnomartIcons/goods/drill_second.png" alt="" />
+								</div>
+								<h2>Перфаратор BOSH BFG 2000</h2>
+								<div class="previus-price" style="visibility: hidden">12500</div>
+								<div class="actual-price">12500 Р.</div>
+								<div class="triangle"></div>
+							</div>
+							<div class="good">
+								<div class="out-ticket">
+									<div class="ticket">new</div>
+								</div>
+								<div class="good-img">
+									<form class="hover-good">
+										<div class="hover-buy">
+											<input type="button" value="купить" class="basket_add" />
+										</div>
+										<div class="hover-bookmarks">
+											<input type="button" value="В закладки" class="bookmark_add" />
+										</div>
+									</form>
+									<img src="img/TechnomartIcons/goods/drill_second.png" alt="" />
+								</div>
+								<h2>Перфаратор BOSH BFG 3000</h2>
+								<div class="previus-price">22500 Р.</div>
+								<div class="actual-price">15500 Р.</div>
+								<div class="triangle"></div>
+							</div>
+							<div class="good">
+								<div class="good-img">
+									<form class="hover-good">
+										<div class="hover-buy">
+											<input type="button" value="купить" class="basket_add" />
+										</div>
+										<div class="hover-bookmarks">
+											<input type="button" value="В закладки" class="bookmark_add" />
+										</div>
+									</form>
+									<img src="img/TechnomartIcons/goods/drill_second.png" alt="" />
+								</div>
+								<h2>Перфаратор BOSH BFG 6000</h2>
+								<div class="previus-price">30500 Р.</div>
+								<div class="actual-price">25500 Р.</div>
+								<div class="triangle"></div>
+							</div>
+							<div class="good">
+								<div class="out-ticket">
+									<div class="ticket">new</div>
+								</div>
+								<div class="good-img">
+									<form class="hover-good">
+										<div class="hover-buy">
+											<input type="button" value="купить" class="basket_add" />
+										</div>
+										<div class="hover-bookmarks">
+											<input type="button" value="В закладки" class="bookmark_add" />
+										</div>
+									</form>
+									<img src="img/TechnomartIcons/goods/drill_second.png" alt="" />
+								</div>
+								<h2>Перфаратор BOSH BFG 2000</h2>
+								<div class="previus-price" style="visibility: hidden">22500 Р.</div>
+								<div class="actual-price">12500 Р.</div>
+								<div class="triangle"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav class="page-switcher">
+					<ul class="pages">
+						<li class="page-number"><a href="emptypage.html">1</a></li>
+						<li class="page-number"><a href="emptypage.html">2</a></li>
+						<li class="page-number"><a href="emptypage.html">3</a></li>
+						<li class="next-page"><a href="">Следующая</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<footer>
+				<div class="container">
+					<div class="catalog-top-footer">
+						<h3>Пара слов о перфораторах</h3>
+						<p>
+							Перфоратор — универсальный строительный инструмент. Предназначен для
+							сверления и долбления отверстий в кирпиче, бетоне и камне.<br />Существуют
+							электромеханические и пневматические перфораторы. Современные модели
+							могут выполнять функции дрели, шуруповерта и отбойного молотка.<br />
+							В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве
+							будут совмещены отбойный молоток и ударная дрель.
+						</p>
+					</div>
+				</div>
+				<div class="top-footer">
+					<div class="container">
+						<div class="footer-flex">
+							<div class="left-col">
+								<div class="home-button">
+									<a href="MainPage.html">Техномарт</a>
+								</div>
+								<div class="top-footer-text">
+									<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+									<p>+7 (812) 555-05-55</p>
+								</div>
+							</div>
+							<div class="right-col">
+								<nav class="footer-nav-top">
+									<ul>
+										<li><a href="emptypage.html">Компания</a></li>
+										<li><a href="emptypage.html">Новости</a></li>
+										<li><a href="catalog.html">Каталог</a></li>
+										<li><a href="emptypage.html">Доставка</a></li>
+										<li><a href="emptypage.html">Контакты</a></li>
+									</ul>
+								</nav>
+
+								<nav class="footer-nav-bottom">
+									<ul>
+										<li><a href="emptypage.html">Материалы</a></li>
+										<li><a href="emptypage.html">Техника</a></li>
+										<li><a href="emptypage.html">Инструмент</a></li>
+										<li><a href="emptypage.html">Спецпредложения</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bottom-footer">
+					<div class="container">
+						<div class="bottom-footer-flex">
+							<div class="copyright">
+								<p>&copy;2010-2016 Компания «Техномарт» Все права защищены</p>
+							</div>
+							<nav class="social-network">
+								<ul>
+									<li class="social vk"><a href="https://vk.com/htmlacademy"></a></li>
+									<li class="social fb">
+										<a href="https://www.facebook.com/htmlacademy/"></a>
+									</li>
+									<li class="social insta">
+										<a href="https://www.instagram.com/htmlacademy/?hl=ru"></a>
+									</li>
+								</ul>
+							</nav>
+							<div class="call-back-info">
+								<div class="call-back">
+									<p>Обратная связь:</p>
+									<a href="emptypage.html">mail@htmlacademy.ru</a>
+								</div>
+
+								<div class="made-by">
+									<p>Разработано -</p>
+									<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<div id="my_purchase_modal" class="purchase-modal">
+				<div class="purchase-modal-content">
+					<div class="purchase-modal-header">
+						<span class="purchase-close"></span>
+					</div>
+
+					<div class="purchase-modal-body">
+						<div class="purchase-modal-text">Товар добавлен в корзину!</div>
+					</div>
+					<div class="purchase-modal-footer">
+						<form action="https://echo.htmlacademy.ru/" method="post">
+							<input
+								type="button"
+								class="purchase-btn accept-purchase"
+								value="Оформить заказ"
+							/>
+							<input
+								type="button"
+								class="purchase-btn continue-purchase"
+								value="Продолжить покупки"
+							/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="/js/purchaseModal.js"></script>
+		<script src="/js/addBasket.js"></script>
+		<script src="/js/addBookmark.js"></script>
+	</body>
+</html>

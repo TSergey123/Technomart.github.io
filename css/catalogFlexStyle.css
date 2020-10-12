@@ -1,0 +1,1588 @@
+@font-face {
+	font-family: Cuprum;
+	src: url("../fonts/cuprum.woff"), url("../fonts/cuprum.woff2");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Cuprum;
+	src: url("../fonts/cuprumbold.woff"), url("../fonts/cuprumbold.woff2");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Cuprum;
+	src: url("../fonts/cuprumbolditalic.woff"),
+		url("../fonts/cuprumbolditalic.woff2");
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Cuprum;
+	src: url("../fonts/cuprumitalic.woff"), url("../fonts/cuprumitalic.woff2");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: PtSans;
+	src: url("../fonts/ptsans.woff"), url("../fonts/ptsans.woff2");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: PtSans;
+	src: url("../fonts/ptsansbold.woff"), url("../fonts/ptsansbold.woff2");
+	font-weight: 700;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	min-width: 1240px;
+	font-family: Cuprum;
+}
+
+body a {
+	font-size: 18px;
+	font-family: Cuprum;
+}
+
+body {
+	font-family: Cuprum;
+}
+.container {
+	width: 940px;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.break {
+	flex-basis: 100%;
+}
+
+.up-header {
+	background: #293449;
+}
+
+.top-header {
+	height: 42px;
+	display: grid;
+	grid-template-columns: 220px 252px 161px 157px 1px;
+}
+
+.home-button {
+	background: #ee3643;
+	box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+	text-align: center;
+	width: 220px;
+	height: 37px;
+	padding-top: 10px;
+}
+
+.home-button a {
+	text-decoration: none;
+	font-size: 23px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.bookmarks {
+	text-align: center;
+	align-self: flex-start;
+	width: 150px;
+	height: 32px;
+	padding-top: 10px;
+	position: relative;
+	margin-left: 15px;
+}
+
+.bookmarks a {
+	text-decoration: none;
+	color: white;
+	padding-left: 20px;
+}
+
+.bookmarks::before {
+	content: "";
+	position: absolute;
+	top: 11px;
+	left: 21px;
+	width: 20px;
+	height: 20px;
+	background: url("../img/TechnomartIcons/icons/icon-bookmark.svg") no-repeat 25%;
+	opacity: 0.3;
+}
+
+.bookmarks:hover::before {
+	opacity: 1;
+}
+
+.bookmarks:active {
+	background: #161d29;
+}
+
+.bookmarks a:active {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.bookmarks:active::before {
+	opacity: 0.3;
+}
+
+.basket {
+	height: 42px;
+	width: 136px;
+	text-align: center;
+	justify-self: start;
+	position: relative;
+	background: #ee3643;
+	margin-left: 21px;
+}
+
+.basket a {
+	text-decoration: none;
+	color: white;
+	font-family: Cuprum;
+	line-height: 45px;
+	padding-left: 19px;
+}
+
+.basket::before {
+	content: "";
+	position: absolute;
+	top: 11px;
+	left: 10px;
+	width: 20px;
+	height: 20px;
+	background: url("../img/TechnomartIcons/icons/icon-cart.svg") no-repeat 25%;
+	background-size: 15px;
+	opacity: 0.3;
+}
+
+.basket:hover::before {
+	opacity: 1;
+}
+
+.basket:active {
+	background: #161d29;
+}
+
+.basket a:active {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.basket:active::before {
+	opacity: 0.3;
+}
+
+.checkout {
+	width: 150px;
+	text-align: center;
+	padding-top: 13px;
+	background: #63a63e;
+	justify-self: start;
+	height: 29px;
+	grid-column: 5;
+}
+
+.checkout a {
+	text-decoration: none;
+	color: white;
+}
+
+/* search */
+
+.search-form {
+	width: 175px;
+	justify-self: start;
+	height: 30px;
+	padding-top: 10px;
+	align-self: center;
+	grid-column: 2;
+	position: relative;
+}
+
+.search-form input,
+.search-form button {
+	outline: none;
+	background: transparent;
+}
+.search-form input[type="text"] {
+	padding-left: 35px;
+	color: white;
+	font-family: Cuprum;
+	border: transparent;
+	width: 238px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+}
+.search-form button {
+	border: none;
+	width: 42px;
+	top: 10px;
+	left: 0;
+	cursor: pointer;
+}
+
+.search-form::before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 16px;
+	width: 20px;
+	height: 20px;
+	background: url("../img/TechnomartIcons/icons/icon-search.svg") no-repeat 25%;
+	z-index: 1;
+	background-size: 15px;
+	opacity: 0.3;
+}
+
+.search-form:hover::before {
+	opacity: 1;
+}
+
+.search-form input:active,
+.search-form input:hover {
+	color: black;
+	background: white;
+}
+
+.search-form:hover::before,
+.search-form:active::before {
+	background: url("../img/TechnomartIcons/icons/icon-search-red.svg") no-repeat
+		25%;
+}
+
+.search-form a:active {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.search-form:active::before {
+	opacity: 0.3;
+}
+
+.search-form input::-webkit-input-placeholder {
+	color: white;
+	font-family: Cuprum;
+	padding-left: 6px;
+	font-size: 18px;
+}
+
+/* search */
+
+.middle-header-bg {
+	background: #f1f5f7;
+}
+
+.middle-header {
+	height: 278px;
+	display: flex;
+	/* justify-content: center; */
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.about-p {
+	width: 210px;
+	height: 71px;
+	line-height: 23px;
+	font-style: italic;
+	font-size: 16px;
+	color: #ee3643;
+	align-self: center;
+	margin-left: 30px;
+	order: 1;
+}
+
+.adress-phone-block {
+	order: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 290px;
+	margin-left: 67px;
+	height: 115px;
+}
+
+.header-phone {
+	border: 3px solid #ffffff;
+	text-align: center;
+	width: 245px;
+	height: 9px;
+	padding-left: 20px;
+	padding-bottom: 30px;
+	line-height: 40px;
+	background: url("../img/TechnomartIcons/icons/icon-phone.svg") no-repeat 35px;
+	align-self: center;
+	margin-bottom: 10px;
+}
+
+.header-phone h2 {
+	font-size: 21px;
+	font-family: Cuprum;
+	padding-left: 7px;
+	color: #ee3643;
+}
+
+.adress {
+	text-align: center;
+	font-size: 14px;
+	align-self: center;
+}
+
+.reg-but {
+	order: 3;
+	width: 340px;
+	display: flex;
+	height: 120px;
+	justify-content: flex-end;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.registered {
+	text-align: center;
+	line-height: 41px;
+	width: 295px;
+	height: 43px;
+	border: 1px solid transparent;
+	background: white;
+	align-self: flex-end;
+	justify-self: end;
+	margin-top: 42px;
+	position: relative;
+}
+
+.profile::before {
+	content: "";
+	position: absolute;
+	top: 11px;
+	left: 14px;
+	width: 20px;
+	height: 20px;
+	background: url("../img/TechnomartIcons/icons/icon-user.svg") no-repeat 25%;
+	/* opacity: 0.3; */
+}
+
+.deauthorization::after {
+	content: "";
+	position: absolute;
+	top: 11px;
+	right: 14px;
+	width: 20px;
+	height: 20px;
+	background: url("../img/TechnomartIcons/icons/icon-logout.svg") no-repeat 35%;
+	/* opacity: 0.3; */
+}
+
+.registered a {
+	text-decoration: none;
+	font-size: 21px;
+	color: black;
+}
+
+.deauthorization:hover {
+	color: black;
+}
+
+.profile:hover {
+	color: black;
+}
+
+.registered a:hover::before {
+	background: url("../img/TechnomartIcons/icons/icon-user-black.svg") no-repeat
+		35%;
+}
+
+.registered a:hover::after {
+	background: url("../img/TechnomartIcons/icons/icon-logout-black.svg") no-repeat
+		35%;
+}
+
+.registered a:active {
+	opacity: 0.3;
+}
+
+.reg-but .reg-user-nav {
+	align-self: flex-end;
+	width: 305px;
+	height: 20px;
+	margin-bottom: 4px;
+}
+
+.reg-user-nav li a {
+	float: left;
+	cursor: pointer;
+}
+
+.reg-user-nav a {
+	color: #32425c;
+	text-decoration: none;
+}
+
+.reg-user-nav li:hover,
+.reg-user-nav a:hover {
+	color: red;
+}
+
+.reg-user-nav a:active,
+.reg-user-nav li:active {
+	color: black;
+	opacity: 0.3;
+}
+
+.reg-user-nav li:first-child {
+	list-style-type: none;
+	padding-right: 31px;
+}
+.reg-user-nav a:first-child {
+	padding-right: 32px;
+}
+
+.header-navbar {
+	background: #32425c;
+	height: 60px;
+	width: 940px;
+	box-shadow: inset 0px -5px 0px #293449;
+	position: relative;
+	order: 5;
+	margin-bottom: 25px;
+}
+
+.header-navbar ul {
+	position: absolute;
+	/* top: -15px; */
+	list-style-type: none;
+	color: white;
+	align-self: center;
+	text-align: center;
+}
+
+.header-navbar li:first-child {
+	padding-left: 12px;
+}
+
+.header-navbar li:not(:first-child) {
+	padding-left: 32px;
+}
+
+.header-navbar li {
+	float: left;
+	padding-right: 25px;
+	padding-left: 25px;
+	height: 60px;
+	line-height: 55px;
+	/* padding-top: 20px; */
+	align-self: center;
+	grid-column: 4;
+}
+
+.header-navbar li:hover {
+	background: #293449;
+	box-shadow: inset 0px -5px 0px #293449;
+}
+
+.header-navbar li:active {
+	opacity: 0.5;
+	background: #1d2739;
+	box-shadow: inset 0px -5px 0px #293449;
+}
+
+.header-navbar a {
+	align-self: center;
+
+	text-decoration: none;
+	color: white;
+}
+/* header */
+
+.catalog-navbar {
+	margin-top: 20px;
+	padding-left: 0;
+	height: 20px;
+}
+
+.catalog-list li {
+	float: left;
+	list-style-type: none;
+	padding-right: 30px;
+	padding-top: 1px;
+	font-size: 14px;
+	font-style: PTSans;
+}
+
+.catalog-list a {
+	color: black;
+	font-style: PTSans;
+	text-transform: uppercase;
+}
+
+.catalog-list li:not(:first-child) {
+	list-style-image: url("../img/TechnomartIcons/icons/arrow-right.svg");
+	padding-left: 22px;
+}
+
+.catalog-list li:first-child {
+	margin-left: -37px;
+}
+
+.catalog-list a {
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.catalog-block-title {
+	background: #f2f6f8;
+	height: 89px;
+	margin-top: 16px;
+}
+
+.catalog-block-title h2 {
+	padding-left: 29px;
+	text-transform: uppercase;
+	line-height: 90px;
+	font-size: 30px;
+	font-weight: normal;
+	padding-top: 2px;
+}
+
+.filter-block {
+	margin-top: 20px;
+	text-transform: uppercase;
+	width: 218px;
+}
+
+.filter-block-title {
+	background: #f7f3ec;
+}
+
+.filter-block-title h3 {
+	height: 36px;
+	line-height: 40px;
+	font-size: 13px;
+	padding-left: 19px;
+}
+
+.filter-block h3:nth-child(2) {
+	margin-top: 20px;
+}
+
+/* fake slider */
+
+.circle {
+	border: 8px solid white;
+	background: #ababab;
+	border-radius: 25px;
+	width: 3px;
+	height: 3px;
+	position: absolute;
+}
+
+.left {
+	left: -9px;
+	top: -11px;
+}
+
+.right {
+	right: 0;
+	top: -11px;
+}
+
+.range-line {
+	border-top: 3px solid green;
+	/* margin-top:55px; */
+	width: 156px;
+	margin-left: 25px;
+	position: relative;
+	top: 41px;
+}
+
+.second-range-line {
+	border-top: 3px solid silver;
+	position: absolute;
+	width: 20px;
+	top: -3px;
+	right: -19px;
+}
+
+/* fake slider */
+
+/* price-slider */
+
+.price-slider {
+	position: relative;
+	margin-top: 16px;
+	margin-bottom: 10px;
+	background: #f7f3ec;
+	height: 80px;
+	width: 220px;
+}
+
+.price-slider input {
+	position: absolute;
+	margin-top: 41px;
+	height: 0px;
+	transform: translateY(-18px);
+}
+
+#max_price_input,
+#min_price_input {
+	text-align: center;
+	height: 38px;
+	width: 95px;
+	border: transparent;
+	background: #f7f3ec;
+}
+
+#min_range {
+	position: absolute;
+	top: 15px;
+	left: 25px;
+	width: 40%;
+	border-bottom: 2px solid green;
+}
+#max_range {
+	width: 40%;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	border-bottom: 2px solid green;
+}
+
+.total-price {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.min-price {
+	width: 90px;
+	height: 30px;
+	text-align: center;
+	font-size: 17px;
+}
+
+.line {
+	align-self: center;
+}
+
+.max-price {
+	width: 95px;
+	height: 30px;
+	display: flex;
+	text-align: center;
+	font-size: 17px;
+}
+
+/* price-slider */
+
+/* checkbox */
+.filter-manufacturer {
+	margin-top: 30px;
+	border-top: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	height: 225px;
+}
+
+.filter-manufacturer label {
+	font-size: 15px;
+	text-transform: uppercase;
+	margin-left: 19px;
+}
+
+.filter-manufacturer input {
+	opacity: 0;
+}
+
+.filter-manufacturer label::before {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	height: 25px;
+	width: 30px;
+	bottom: 0px;
+	left: 0;
+	background: url("../img/TechnomartIcons/icons/checkbox-off.svg") no-repeat;
+	opacity: 0.8;
+}
+
+.filter-manufacturer label::after {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	height: 25px;
+	width: 30px;
+	bottom: 0;
+	left: 0;
+	background: url("../img/TechnomartIcons/icons/checkbox-on.svg") no-repeat;
+	opacity: 0.8;
+}
+
+.filter-manufacturer input[type="checkbox"] + label::after {
+	content: none;
+}
+
+.filter-manufacturer input[type="checkbox"]:checked + label::after {
+	content: "";
+}
+
+.filter-manufacturer label:hover::after,
+.filter-manufacturer label:hover::before {
+	opacity: 1;
+}
+.filter-manufacturer input[type="checkbox"]:disabled + label,
+.filter-manufacturer input[type="checkbox"]:checked:disabled + label {
+	opacity: 0.3;
+}
+
+.checkbox-sort {
+	padding-top: 20px;
+	position: relative;
+}
+
+/* checkbox */
+
+/* radio */
+
+.power {
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.power h3 {
+	margin-top: 20px;
+}
+
+.radio-sort {
+	position: relative;
+}
+
+.radio-sort:first-of-type {
+	width: 100%;
+	margin-top: 30px;
+	display: flex;
+}
+
+.radio-sort:nth-of-type(2) {
+	margin-top: 20px;
+}
+
+.radio-sort label {
+	padding-left: 21px;
+}
+
+.radio-sort input {
+	opacity: 0;
+}
+
+.radio-sort label::before {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 0;
+	width: 25px;
+	height: 25px;
+	background: url("../img/TechnomartIcons/icons/radio-off.svg") no-repeat;
+}
+
+.radio-sort label::after {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 0;
+	width: 25px;
+	height: 25px;
+	background: url("../img/TechnomartIcons/icons/radio-on.svg") no-repeat;
+}
+
+.radio-sort input + label::after {
+	content: none;
+}
+
+.radio-sort input:checked + label::after {
+	content: "";
+}
+
+.power input[type="submit"] {
+	background: white;
+	border: 1px solid lightgray;
+	text-align: center;
+	height: 40px;
+	width: 100%;
+	text-transform: uppercase;
+	margin-top: 36px;
+}
+/* form */
+
+.flex-container {
+	/* display: flex; */
+	/* flex-direction: column; */
+	width: 100%;
+	height: 1115px;
+	display: grid;
+	grid-template-columns: 240px 500px;
+}
+
+.catalog-sort {
+	margin-top: 15px;
+	width: 700px;
+	height: 1080px;
+}
+
+.catalog-sort nav {
+	text-transform: uppercase;
+}
+
+.catalog-sort-title {
+	background: #f7f3ec;
+	height: 38px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.catalog-sort h3 {
+	padding-top: 14px;
+	padding-left: 17px;
+	font-size: 16px;
+}
+
+.catalog-sort ul {
+	display: flex;
+	list-style-type: none;
+	width: 480px;
+	padding-top: 5px;
+}
+
+.catalog-sort a {
+	float: left;
+	font-size: 13px;
+	color: black;
+}
+
+.catalog-sort li {
+	padding-top: 8px;
+}
+
+.catalog-sort li:first-child a {
+	padding-left: 20px;
+	color: #ee3643;
+	text-decoration: none;
+}
+
+.catalog-sort li:nth-child(2) a,
+.catalog-sort li:nth-child(3) a {
+	text-decoration: underline;
+	text-decoration-style: dashed;
+	text-decoration-color: #ee3643;
+	opacity: 0.3;
+}
+
+.catalog-sort li:nth-child(2) a {
+	padding-left: 80px;
+}
+.catalog-sort li:nth-child(3) a {
+	padding-left: 75px;
+}
+
+.catalog-sort li:nth-child(4) a {
+	padding-left: 40px;
+}
+
+.catalog-sort li:not(:first-child) {
+	/* padding-left:48px; */
+}
+
+.arrow-up li svg:hover {
+	fill: black;
+}
+
+.catalog-sort {
+	position: relative;
+}
+
+.arrow-down a {
+	width: 25px;
+	height: 20px;
+	background: url("../img/TechnomartIcons/icons/filter-arrow-down.svg") no-repeat
+		55%;
+	display: inline-block;
+}
+
+.arrow-up a {
+	width: 25px;
+	height: 20px;
+	background: url("../img/TechnomartIcons/icons/filter-arrow-up-red.svg")
+		no-repeat 55%;
+	display: inline-block;
+}
+
+.out-ticket {
+	position: relative;
+}
+
+.ticket {
+	position: absolute;
+	width: 100px;
+	height: 30px;
+	background: #ee3643;
+	transform: rotate(45deg);
+	text-align: center;
+	color: white;
+	line-height: 35px;
+	font-family: Cuprum;
+	text-transform: uppercase;
+	font-size: 14px;
+	right: -30px;
+	top: 11px;
+}
+
+.catalog-assortment {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 700px;
+	height: 1015px;
+}
+
+.good {
+	margin-right: 1px;
+	width: 220px;
+	height: 315px;
+	text-align: center;
+	border: 1px solid lightgray;
+	overflow: hidden;
+}
+
+.good h2 {
+	margin-left: 25px;
+	font-size: 18px;
+	width: 168px;
+	font-family: PTSans;
+}
+
+.hover-good {
+	display: none;
+}
+
+.good:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.good:hover .hover-good {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.good:hover img {
+	display: none;
+}
+
+.hover-buy input {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	/* border:transparent; */
+	color: white;
+	font-size: 16px;
+	padding-bottom: 10px;
+	line-height: 30px;
+	padding-left: 20px;
+}
+
+.hover-buy a {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding-left: 50px;
+	line-height: 30px;
+}
+
+.hover-bookmarks input {
+	color: #32425c;
+	font-size: 14px;
+	height: 100%;
+	width: 100%;
+	background: transparent;
+	border: transparent;
+	text-transform: uppercase;
+}
+
+.hover-bookmarks a {
+	text-decoration: none;
+	color: #32425c;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 25px;
+	padding-left: 35px;
+}
+
+.hover-buy {
+	width: 135px;
+	height: 40px;
+	border-radius: 2px;
+	background: #63a63e;
+	box-shadow: inset 0px -3px 0px #367315;
+	/* padding-top: 5px; */
+	position: relative;
+	margin-top: 30px;
+}
+
+.hover-buy:before {
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 20px;
+	left: 30px;
+	top: 10px;
+	margin: auto;
+	background: url("../img/TechnomartIcons/icons/icon-cart.svg") no-repeat;
+}
+
+.hover-buy:hover {
+	background: #5fbb2d;
+	box-shadow: inset 0px -3px 0px #367315;
+}
+
+.hover-buy:active {
+	background: #518534;
+	box-shadow: inset 0px -3px 0px #367315;
+}
+
+.hover-bookmarks:hover {
+	border: 3px solid #32425c;
+}
+
+.hover-bookmarks:active {
+	border: 3px solid lightgrey;
+}
+
+.hover-bookmarks {
+	border: 3px solid #63a63e;
+	box-sizing: border-box;
+	width: 135px;
+	height: 40px;
+	border-radius: 2px;
+	/* padding-top: 5px; */
+	align-self: center;
+	justify-self: center;
+	margin-top: 10px;
+}
+
+.previus-price {
+}
+
+.previus-price {
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: bold;
+	align-items: center;
+	text-align: center;
+	text-decoration-line: line-through;
+	color: #a9a9a9;
+	width: 100%;
+}
+
+.actual-price {
+	font-family: PTSans;
+	position: relative;
+	background: #ee3643;
+	color: white;
+	height: 38px;
+	width: 120px;
+	margin-left: 46px;
+	text-align: center;
+	font-size: 17px;
+	line-height: 42px;
+	margin-top: 6px;
+}
+
+.actual-price::after {
+	content: "";
+	position: absolute;
+	top: 0px;
+	right: -38px;
+	width: 0;
+	height: 0;
+	border: 19px solid #fff;
+	border-left-color: #ee3643;
+}
+
+.good-img {
+	width: 100%;
+	height: 180px;
+	padding: 0;
+	margin: 0;
+}
+
+.good img {
+	padding-top: 30px;
+}
+
+.page-switcher {
+	width: 600px;
+	margin-left: 188px;
+}
+
+.pages {
+	height: 50px;
+	list-style-type: none;
+}
+
+.pages li {
+	float: left;
+	text-align: center;
+	align-items: center;
+	margin-top: 14px;
+	margin-left: 11px;
+	width: 33px;
+	height: 24px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 13px;
+	font-family: PTSans;
+}
+
+.pages a {
+	text-decoration: none;
+	color: black;
+}
+
+.page-number,
+.next-page {
+	border: 1px solid #e5e5e5;
+}
+
+.page-number:hover,
+.next-page:hover {
+	border: 1px solid #c5c5c5;
+}
+
+.page-number:active,
+.next-page:active {
+	border: 1px solid #ee3643;
+}
+
+.page-number:first-child {
+	background: #ee3643;
+}
+
+.pages li:last-child {
+	width: 139px;
+	height: 27px;
+	margin-left: 16px;
+	text-transform: uppercase;
+}
+
+footer {
+	margin-top: 50px;
+	background: #f1f5f7;
+}
+
+.top-footer {
+	background: #32425c;
+}
+
+.catalog-top-footer {
+	/* height: 203px; */
+	height: 195px;
+	margin-top: 60px;
+}
+
+.catalog-top-footer h3 {
+	padding-top: 64px;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.catalog-top-footer p {
+	font-family: PTSans;
+	margin-top: 21px;
+	font-size: 13px;
+	line-height: 25px;
+}
+
+.top-footer {
+	margin-top: 65px;
+	justify-content: flex-end;
+	height: 195px;
+}
+
+.top-footer .home-button {
+	align-self: flex-end;
+	height: 55px;
+}
+
+.top-footer .home-button a {
+	font-size: 30px;
+}
+
+.top-footer-text {
+	margin-top: 25px;
+	width: 350px;
+	height: 30px;
+	line-height: 24px;
+	color: white;
+	font-size: 18px;
+}
+
+.footer-nav-top li {
+	float: left;
+	list-style-type: none;
+	font-size: 18px;
+}
+
+.footer-nav-top a {
+	color: white;
+	text-decoration: none;
+}
+
+.footer-nav-top li:hover {
+	text-decoration: underline;
+}
+
+.footer-nav-top li:active {
+	opacity: 0.3;
+	text-decoration: unset;
+}
+
+.footer-nav-top {
+	height: 30px;
+	margin-top: 35px;
+}
+
+.footer-nav-top li:not(:first-child) {
+	padding-left: 58px;
+}
+
+.left-col {
+	width: 350px;
+	height: 200px;
+}
+
+.right-col {
+	width: 590px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.footer-flex {
+	display: flex;
+}
+
+.footer-nav-bottom {
+	height: 30px;
+	margin-bottom: 50px;
+}
+
+.footer-nav-bottom li {
+	float: left;
+	list-style-type: none;
+	font-size: 18px;
+}
+
+.footer-nav-bottom li:not(:first-child) {
+	padding-left: 58px;
+}
+
+.footer-nav-bottom li {
+	padding-left: 21px;
+}
+
+.footer-nav-bottom a {
+	color: #ffd180;
+	text-decoration: none;
+}
+
+.footer-nav-bottom a:hover {
+	text-decoration: underline;
+}
+
+.footer-nav-bottom a:active {
+	opacity: 0.3;
+	text-decoration: none;
+}
+
+.bottom-footer {
+	background: #293449;
+	height: 105px;
+}
+
+.bottom-footer-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	color: white;
+	padding-top: 30px;
+}
+
+.bottom-footer-flex a {
+	color: white;
+}
+
+.copyright {
+	align-self: center;
+	width: 240px;
+	height: 100%;
+}
+
+.social-network {
+	height: 100%;
+	width: 181px;
+	align-self: center;
+	cursor: pointer;
+}
+
+.social-network li {
+	float: left;
+	list-style-type: none;
+}
+
+.fb::before {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 15px;
+	width: 20px;
+	height: 20px;
+	background: url("../img/TechnomartIcons/icons/icon-fb.svg") no-repeat;
+}
+
+.vk::before {
+	content: "";
+	position: absolute;
+	top: 14px;
+	left: 9px;
+	width: 30px;
+	height: 20px;
+	background: url("../img/TechnomartIcons/icons/icon-vk.svg") no-repeat;
+}
+
+.insta::before {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	width: 20px;
+	height: 20px;
+	background: url("../img/TechnomartIcons/icons/icon-insta.svg") no-repeat;
+}
+
+.social {
+	width: 44px;
+	height: 44px;
+	border-radius: 25px;
+	background: linear-gradient(0deg, #212a3a, #212a3a);
+}
+
+.social:hover,
+.social:active {
+	background: #ee3643;
+}
+
+.insta,
+.vk,
+.fb {
+	position: relative;
+}
+
+.call-back-info {
+	height: 100%;
+	display: flex;
+	width: 300px;
+	align-self: center;
+	justify-self: flex-end;
+	justify-content: space-between;
+}
+
+.call-back a,
+.made-by a {
+	color: #ffd180;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.call-back a:hover,
+.made-by a:hover {
+	text-decoration: underline;
+}
+
+.call-back a:active,
+.made-by a:active {
+	text-decoration: none;
+	color: #ee3643;
+}
+
+.made-by {
+	width: 110px;
+}
+
+.made-by a {
+	color: #ffd180;
+}
+
+/* modal */
+
+.purchase-btn {
+	cursor: pointer;
+}
+
+.purchase-modal {
+	display: none;
+	position: fixed;
+	padding-top: 175px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 100;
+}
+
+.purchase-modal-content {
+	position: relative;
+	margin: auto;
+	padding: 0;
+	border-top: 6px solid #ee3643;
+	width: 620px;
+	height: 270px;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+	background: white;
+}
+
+.purchase-modal-header {
+	height: 40px;
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.purchase-close::before {
+	position: absolute;
+	content: "";
+	width: 21px;
+	height: 21px;
+	background: url("../img/TechnomartIcons/icons/icon-close.svg");
+	top: 13px;
+	right: 11px;
+	cursor: pointer;
+}
+
+.purchase-close {
+	width: 40px;
+	height: 40px;
+}
+
+.purchase-modal-body {
+	height: 120px;
+}
+
+.purchase-modal-body {
+	display: flex;
+	justify-content: center;
+	font-size: 25px;
+	align-items: flex-end;
+	position: relative;
+}
+
+.purchase-modal-text {
+	height: 93px;
+	width: 270px;
+}
+
+.purchase-modal-body:before {
+	position: absolute;
+	content: "";
+	background: url("../img/TechnomartIcons/icons/icon-mark.svg");
+	width: 66px;
+	height: 66px;
+	left: 80px;
+	top: 6px;
+}
+
+.purchase-modal-footer {
+	height: 110px;
+	background: silver;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.purchase-btn {
+	height: 40px;
+	width: 195px;
+	text-transform: uppercase;
+	font-size: 11px;
+	margin-top: 10px;
+}
+
+.accept-purchase {
+	background: #ee3643;
+	color: white;
+}
+
+.continue-purchase {
+	margin-left: 3px;
+	color: black;
+	background: white;
+}
+
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+.close {
+	position: absolute;
+	color: #ee3643;
+	float: right;
+	font-weight: bold;
+	right: 0;
+	padding-top: 25px;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* modal */

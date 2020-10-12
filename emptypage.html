@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+
+	<style>
+		body {
+			background: url("img/emptypagebg.jpg");
+		}
+		.container {
+			margin: auto;
+			width: 940px;
+			color: white;
+			display: flex;
+			justify-content: center;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		.container h2 {
+			font-size: 80px;
+		}
+		.container p {
+			font-size: 40px;
+		}
+
+		.container a {
+			color: white;
+			text-decoration: none;
+			font-size: 30px;
+		}
+
+		.links {
+			display: flex;
+		}
+
+		.link {
+			border: 3px solid gray;
+			margin-right: 10px;
+		}
+
+		.link a:hover {
+			color: lightgrey;
+		}
+
+		.animation {
+			bottom: 15%;
+			position: absolute;
+			animation: linear infinite alternate;
+			animation-name: run;
+			animation-duration: 5s;
+		}
+
+		@keyframes run {
+			0% {
+				left: 35%;
+			}
+			50% {
+				left: 55%;
+			}
+			100% {
+				left: 30%;
+			}
+		}
+	</style>
+	<body>
+		<div class="container">
+			<h2>Страница не существует</h2>
+			<p>На HTMLAcademy мы такого еще не проходили!</p>
+			<div class="links">
+				<div class="link">
+					<a href="/MainPage.html">Вернуться на главную страницу</a>
+				</div>
+				<div class="link">
+					<a href="/catalog.html">Вернуться к просмотру каталога</a>
+				</div>
+			</div>
+			<div class="animation"><p>Приходите позже</p></div>
+		</div>
+	</body>
+</html>
