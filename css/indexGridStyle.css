@@ -1240,17 +1240,17 @@ services-table li:first-child::active .delivery-terms {
 }
 
 
-input[name="services-table-radio"]:checked + label div {
+input[name="services-table-radio"]:checked + label {
 	background: white;
 	color: #32425c;
 }
 
-input[name="services-table-radio"]:not(:checked) + label div  {
+input[name="services-table-radio"]:not(:checked) + label{
 	background: #32425c;
 	color: white;
 }
 
-input[name="services-table-radio"]:not(:checked) +  label div:hover {
+input[name="services-table-radio"]:not(:checked) +  label:hover {
 	background: #293449;
 	color: white;
 }
